@@ -1,0 +1,59 @@
+.sidebar {
+  width: 200px;
+  background: linear-gradient(180deg, #c96f05 0%, #d67f0a 100%); /* Cor de fundo da barra lateral */
+  /* padding: 20px 0; */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Adiciona scroll se a lista for muito longa */
+}
+
+.sidebar-header {
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 20px;
+  background: #d67c00;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.sidebar-header h2 {
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item {
+  margin-bottom: 5px;
+  
+}
+
+.sidebar-button {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  background: linear-gradient(180deg, #c96f05 0%, #d67f0a 100%);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  text-align: center;
+}
+
+.sidebar-button:hover {
+  background-color: #d17e42;
+}
+
+/* Opcional: Adicionar um efeito de "ativo" para o botão selecionado */
+.sidebar-button.active {
+  background-color: #d17e42;
+  font-weight: bold;
+}
