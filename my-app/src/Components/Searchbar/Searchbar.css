@@ -1,0 +1,38 @@
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 0.8 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.date-filter {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  flex: 0.2 1;
+}
+
+.filter-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #d67c00;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filter-button:hover {
+  background-color: #b86b00;
+}
