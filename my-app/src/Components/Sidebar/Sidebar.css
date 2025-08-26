@@ -1,13 +1,14 @@
 .sidebar {
   width: 200px;
-  background: linear-gradient(180deg, #c96f05 0%, #d67f0a 100%); /* Gradiente de cor */
-  overflow-y: auto; /* Mantido caso a tela seja muito pequena */
-  min-height: 100vh; /* Garante que a barra lateral ocupe toda a altura da tela */
+  background: linear-gradient(180deg, #c96f05 0%, #d67f0a 100%);
+  /* Removemos a barra de rolagem, pois não será necessária com os novos estilos */
+  overflow-y: hidden;
+  height: 100vh; /* Garante que a barra lateral ocupe toda a altura da tela */
 }
 
 .sidebar-header {
   padding: 10px 20px;
-  background-color: #d67c00; /* Cor de fundo para o cabeçalho */
+  background-color: #d67c00;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,35 +17,38 @@
 }
 
 .sidebar-header h2 {
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
-  letter-spacing: 1px;
-  margin: 0; /* Remove a margem padrão do h2 */
+  margin: 0;
+  font-weight: bolder;
 }
 
 .sidebar-list {
   list-style: none;
-  padding: 10px; /* Reduzindo o padding vertical aqui */
-  margin: 0;
+  padding: 5px 10px; /* Ajuste o padding para itens na lista */
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column; /* Distribui os botões uniformemente */
+  height: calc(100% - 64px);
+  gap: 4px; /* Altura total menos a altura do cabeçalho */
 }
 
 .sidebar-item {
-  margin-bottom: 5px; /* Mantém um pequeno espaçamento entre os botões */
+  margin-bottom: 0px;
 }
 
 .sidebar-button {
   width: 100%;
-  padding: 8px 10px; /* Reduzindo o padding para caber mais itens */
+  padding: 6px 10px; /* Reduzindo o padding para caber mais itens */
   border: none;
-  background-color: transparent; /* Remove a cor de fundo duplicada */
-  color: white;
-  font-size: 14px; /* Reduzindo o tamanho da fonte para economizar espaço */
+  background-color: #ffffff;
+  color: black;
+  font-size: 14px; /* Reduzindo o tamanho da fonte */
   cursor: pointer;
   transition: background-color 0.3s;
   border-radius: 8px; /* Cantos arredondados */
   font-weight: bold;
   text-align: center;
-  border: 1px solid transparent; /* Adiciona uma borda transparente para não "empurrar" o conteúdo */
 }
 
 .sidebar-button:hover {
@@ -55,5 +59,4 @@
 .sidebar-button.active {
   background-color: #d17e42;
   font-weight: bold;
-  border: 1px solid rgba(255, 255, 255, 0.4);
 }
