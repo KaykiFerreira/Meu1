@@ -2,7 +2,23 @@ import React from 'react';
 import './Sidebar.css';
 
 const Sidebar = () => {
-  const categories = Array(14).fill('Todos'); // Simulando 15 botões
+  const categories = [
+    'Todos',
+    'Amendo Chef',
+    'Bombons Happy',
+    'Chocomais',
+    'Chokiss',
+    'Coloreti',
+    'Coloreti Ball',
+    'Croc-Choc',
+    'Doces de Amendoim',
+    'Ducrem',
+    'Granulados',
+    'Pingo de Leite',
+    'Snacks de Amendoim',
+    'Tetop e Top Mellow'
+  ];
+
   return (
     <aside className="sidebar">
       <div className="sidebar-header">

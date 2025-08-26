@@ -1,11 +1,12 @@
 .sidebar {
   width: 200px;
   background: linear-gradient(180deg, #c96f05 0%, #d67f0a 100%); /* Gradiente de cor */
-  overflow-y: auto; /* Adiciona barra de rolagem se o conteúdo for muito grande */
+  overflow-y: auto; /* Mantido caso a tela seja muito pequena */
+  min-height: 100vh; /* Garante que a barra lateral ocupe toda a altura da tela */
 }
 
 .sidebar-header {
-  padding: 20px;
+  padding: 10px 20px;
   background-color: #d67c00; /* Cor de fundo para o cabeçalho */
   display: flex;
   align-items: center;
@@ -23,34 +24,36 @@
 
 .sidebar-list {
   list-style: none;
-  padding: 0 10px; /* Adicione um padding horizontal para os botões */
+  padding: 10px; /* Reduzindo o padding vertical aqui */
   margin: 0;
 }
 
 .sidebar-item {
-  margin-bottom: 10px;
-  /* Não precisa de margin-bottom aqui, pois a própria margem do botão já resolve */
+  margin-bottom: 5px; /* Mantém um pequeno espaçamento entre os botões */
 }
 
 .sidebar-button {
   width: 100%;
-  padding: 10px 20px;
+  padding: 8px 10px; /* Reduzindo o padding para caber mais itens */
   border: none;
   background-color: transparent; /* Remove a cor de fundo duplicada */
   color: white;
-  font-size: 16px;
+  font-size: 14px; /* Reduzindo o tamanho da fonte para economizar espaço */
   cursor: pointer;
   transition: background-color 0.3s;
   border-radius: 8px; /* Cantos arredondados */
   font-weight: bold;
   text-align: center;
+  border: 1px solid transparent; /* Adiciona uma borda transparente para não "empurrar" o conteúdo */
 }
 
 .sidebar-button:hover {
   background-color: #d17e42;
 }
 
+/* Opcional: Adicionar um efeito de "ativo" para o botão selecionado */
 .sidebar-button.active {
   background-color: #d17e42;
   font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
