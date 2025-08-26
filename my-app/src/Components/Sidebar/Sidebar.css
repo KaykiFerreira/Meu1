@@ -60,3 +60,6 @@
   background-color: #d17e42;
   font-weight: bold;
 }
+::-webkit-scrollbar {
+    display: none;
+}
