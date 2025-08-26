@@ -2,7 +2,7 @@ import React from 'react';
 import './Sidebar.css';
 
 const Sidebar = () => {
-  const categories = Array(15).fill('Todos'); // Simulando 15 botões
+  const categories = Array(14).fill('Todos'); // Simulando 15 botões
   return (
     <aside className="sidebar">
       <div className="sidebar-header">
